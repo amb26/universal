@@ -51,3 +51,28 @@ Sample users and clients
 ------------------------
 
 - [sample users and clients](gpii-oauth2-sample-data/src/DataStoreWithSampleData.js)
+
+Instructions on running the sample client with the cloud based configuration
+============================================================================
+
+Refer to the section "Installing dependencies" above to install the universal project and module dependencies for `gpii-oauth2-sample-client`. 
+
+Running the server and the sample client
+----------------------------------------
+
+At the top level of the universal project, run GPII in cloud based configuration:
+
+- `NODE_ENV=cloudbased.development.all.local node gpii.js`
+
+Start another terminal to run the sample client:
+
+- `cd examples/gpii-oauth2-sample-client`
+- `node app.js`
+
+Open the web page of the sample client:
+
+- [http://localhost:3002/](http://localhost:3002/) - Sample client
+- Click the link "Get preferences", when the OAuth login page appears, enter the user name `chromehc` and password `chromehc`.
+- Check "all" checkbox or select desired preferences to share. 
+- Click `allow` button.
+- The web page shows the preferences that the user `chromehc` has granted permission to the solution of `Service A`.
